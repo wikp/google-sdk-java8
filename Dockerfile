@@ -1,9 +1,8 @@
-FROM frolvlad/alpine-oraclejdk8:latest
+FROM adoptopenjdk/openjdk8:alpine
 
 RUN apk update && \
     apk add curl bash python git && \
     curl https://sdk.cloud.google.com | bash
-
 
 # Disable updater check for the whole installation.
 # Users won't be bugged with notifications to update to the latest version of gcloud.
