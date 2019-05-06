@@ -1,7 +1,7 @@
 FROM frolvlad/alpine-oraclejdk8:latest
 
 RUN apk update && \
-    apk add curl bash python && \
+    apk add curl bash python git && \
     curl https://sdk.cloud.google.com | bash
 
 
