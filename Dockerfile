@@ -1,7 +1,7 @@
 FROM adoptopenjdk/openjdk8:alpine
 
 RUN apk update && \
-    apk add curl bash python git && \
+    apk add curl bash python git openssh-client && \
     curl https://sdk.cloud.google.com | bash
 
 # Disable updater check for the whole installation.
