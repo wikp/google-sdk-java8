@@ -17,5 +17,4 @@ RUN sed -i -- 's/\"disable_updater\": false/\"disable_updater\": true/g' /root/g
 VOLUME ["/.config"]
 ENV PATH $PATH:/root/google-cloud-sdk/bin
 
-
 CMD /bin/bash
